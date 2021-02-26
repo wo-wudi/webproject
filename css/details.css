@@ -1,0 +1,73 @@
+.header{
+	height: 40px;
+	top: 0px;
+	z-index: 1;
+}
+.bian{
+	background-color: rgba(0, 0, 0, .6) !important;
+}
+.header a{
+	line-height: 40px;
+}
+a:hover{
+	text-decoration: none;
+}
+.header a:hover{
+	color: #999 !important;
+}
+.main_font{
+  top: 150px;
+  left: 100px;
+}
+@keyframes font_move{
+	from{
+		transform: translateY(-500px);
+	}
+	40%{
+		transform: rotate(400deg);
+	}
+	60%{
+		transform: rotateX(300deg);
+	}
+	to{
+		transform: translateY(0px);
+	}
+}
+.font_move{
+	animation: font_move 2s ease;
+}
+.w-15{
+	width: 15%;
+}
+.d-flex>a{
+	font-size: 0.9rem !important;
+  border-radius: 50px !important;
+}
+.col-2>.mx-2>.border{
+	border-radius: 5px;
+}
+.col-2>.mx-2>.border:hover{
+	border-color: #4fb68d !important;
+}
+.col-4>.ml-4>.w-75{
+	border-radius: 50px !important;
+}
+.n1>span{
+	color: #000 !important;
+}
+.new{
+	height: 20px;
+	line-height: 18px;
+	top: 10px;
+	left: 10px;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 12px;
+	padding: 0 5px;
+}
+.w-60{
+	width: 60%;
+}
+.col-6>.row>.col-3>li a.text-muted:hover{
+	color: #4fb68d !important;
+}

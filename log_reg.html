@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/log_reg.js"></script>
+    <link rel="stylesheet" href="css/login_reg.css">
+    <script>
+      function $(obj){
+      return document.getElementById(obj)
+    }
+    function Tab(Xname,Cname,Lenght,j){
+      for(i=1;i<Lenght;i++){
+        eval("$('"+Xname+i+"').className='n2'");
+        eval("$('"+Xname+j+"').className='n1'");
+      }
+      for(i=1;i<Lenght;i++){
+        eval("$('"+Cname+i+"').style.display='none'");
+        eval("$('"+Cname+j+"').style.display=''");
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header bg-dark position-sticky">
+        <div class="row no-gutters">
+          <div class="col-3">
+            <div><a class="text-white font-weight-bold ml-4" href="index.html">欢迎来到校园交易商城</a></div>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-5 d-flex justify-content-around">
+            <div><a href="index.html" class="text-white font-weight-bold">首页</a></div>
+            <div><a href="about.html" class="text-white font-weight-bold">关于我们</a></div>
+            <div><a href="list.html" class="text-white font-weight-bold">商品列表</a></div>
+            <div><a href="cart.html" class="text-white font-weight-bold">购物车</a></div>
+            <div><a href="javascript:;" class="text-white font-weight-bold">登录</a></div>
+            <div><a href="javascript:;" class="text-white font-weight-bold">注册</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative mb-5">
+        <img class="w-100" src="img/login/breadcrumb-bg.jpg" alt="">
+        <div class="h1 position-absolute main_font font_move">
+          <div>登录/注册界面</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-7 ml-auto mr-auto">
+            <div class="login_reg_head d-flex justify-content-center">
+              <a href="javascript:;" id="b1" class="n1" onclick="Tab('b','bx',3,1)"><span class="text-dark font-weight-bold h3 mr-5">登录</span></a>
+              <div class="font-weight-bold h4">|</div>
+              <a href="javascript:;" id="b2" class="n2" onclick="Tab('b','bx',3,2)"><span class="text-dark font-weight-bold h3 ml-5">注册</span></a>
+            </div>
+            <div class="my-5">
+              <div id="bx1" class="tab_login">
+                <div class="login_form text-left">
+                  <div>
+                    <input type="text" placeholder="用户名" class="w-100 p-2 mb-4 border-1 border">
+                    <input type="password" placeholder="密码" class="w-100 p-2 border-1 border">
+                    <div class="d-flex justify-content-between mt-4">
+                      <div>
+                        <input type="checkbox" id="rem">
+                        <label for="rem">记住我</label>
+                      </div>
+                      <a href="javascript:;" class="text-dark">忘记密码？</a>
+                    </div>
+                    <a href="javascript:;" class="btn btn-light border-1 border mt-1">登录</a>
+                  </div>
+                </div>
+              </div>
+              <div id="bx2" class="tab_reg" style="display:none">
+                <div class="login_form text-left">
+                  <div class="form">
+                    <input type="text" placeholder="用户名" class="w-100 p-2 mb-2 border-1 border">
+                    <input type="password" placeholder="密码" class="w-100 mb-2 p-2 border-1 border">
+                    <input type="text" placeholder="邮箱" class="w-100 p-2 mb-2 border-1 border">
+                    <input type="text" placeholder="手机号码" class="w-100 p-2 border-1 border">
+                    <div class="d-flex justify-content-between mt-2">
+                      <div>
+                        <input type="radio" id="man" name="sex" checked>
+                        <label for="man">男</label>
+                        <input type="radio" id="woman" name="sex">
+                        <label for="woman">女</label>
+                      </div>
+                    </div>
+                    <a href="javascript:;" class="btn btn-light border-1 border mt-1">注册</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters mt-5">
+        <div class="col-3 text-center">
+          <a href="javascript:;"><img class="w-60" src="img/login/0.png" alt=""></a>
+        </div>
+        <div class="col-6">
+          <div class="row no-gutters">
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">购物指南</a></li>
+              <li><a href="javascript:;" class="small text-muted">购物流程</a></li>
+              <li><a href="javascript:;" class="small text-muted">会员介绍</a></li>
+              <li><a href="javascript:;" class="small text-muted">常见问题</a></li>
+              <li><a href="javascript:;" class="small text-muted">联系客服</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">配送方式</a></li>
+              <li><a href="javascript:;" class="small text-muted">上门自提</a></li>
+              <li><a href="javascript:;" class="small text-muted">211限时送达</a></li>
+              <li><a href="javascript:;" class="small text-muted">配送服务查询</a></li>
+              <li><a href="javascript:;" class="small text-muted">配送费收取标准</a></li>
+              <li><a href="javascript:;" class="small text-muted">海外配送</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">支付方式</a></li>
+              <li><a href="javascript:;" class="small text-muted">货到付款</a></li>
+              <li><a href="javascript:;" class="small text-muted">在线支付</a></li>
+              <li><a href="javascript:;" class="small text-muted">分期付款</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">售后服务</a></li>
+              <li><a href="javascript:;" class="small text-muted">售后政策</a></li>
+              <li><a href="javascript:;" class="small text-muted">价格保护</a></li>
+              <li><a href="javascript:;" class="small text-muted">退款说明</a></li>
+              <li><a href="javascript:;" class="small text-muted">取消订单</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div><a href="javascript:;"><img src="img/login/app_store.png" alt=""></a></div>
+          <div><a href="javascript:;"><img src="img/login/google_play.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.header{
+	height: 40px;
+	top: 0px;
+	z-index: 1;
+}
+.bian{
+	background-color: rgba(0, 0, 0, .6) !important;
+}
+.header a{
+	line-height: 40px;
+}
+a:hover{
+	text-decoration: none;
+}
+.header a:hover{
+	color: #999 !important;
+}
+@keyframes font_move{
+	from{
+		transform: translateY(-500px);
+	}
+	50%{
+		transform: translateY(100px);
+	}
+	to{
+		transform: translateY(0px);
+	}
+}
+.font_move{
+	animation: font_move 2s ease;
+}
+.w-60{
+	width: 60%;
+}
+.main_font{
+  top: 35%;
+  left: 40%;
+}
+.col-6>.row>.col-3>li a.text-muted:hover{
+	color: #4fb68d !important;
+}

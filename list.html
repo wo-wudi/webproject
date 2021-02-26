@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/list.js"></script>
+    <link rel="stylesheet" href="css/list.css">
+    <script>
+       function $(obj){
+      return document.getElementById(obj)
+    }
+    function Tab(Xname,Cname,Lenght,j){
+      for(i=1;i<Lenght;i++){
+        eval("$('"+Xname+i+"').className='n2'");
+        eval("$('"+Xname+j+"').className='n1'");
+      }
+      for(i=1;i<Lenght;i++){
+        eval("$('"+Cname+i+"').style.display='none'");
+        eval("$('"+Cname+j+"').style.display=''");
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header bg-dark position-sticky">
+        <div class="row no-gutters">
+          <div class="col-3">
+            <div><a class="text-white font-weight-bold ml-4" href="index.html">欢迎来到校园交易商城</a></div>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-5 d-flex justify-content-around">
+            <div><a href="index.html" class="text-white font-weight-bold">首页</a></div>
+            <div><a href="about.html" class="text-white font-weight-bold">关于我们</a></div>
+            <div><a href="javascript:;" class="text-white font-weight-bold">商品列表</a></div>
+            <div><a href="cart.html" class="text-white font-weight-bold">购物车</a></div>
+            <div><a href="log_reg.html" class="text-white font-weight-bold">登录</a></div>
+            <div><a href="log_reg.html" class="text-white font-weight-bold">注册</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative">
+        <img class="w-100" src="img/list/sample-5.jpg" alt="">
+        <div class="h1 position-absolute main_font font_move">商品列表</div>
+      </div>
+      <div class="mx-4 bg-light py-2 mt-5">
+        <a href="javascript:;" id="b1" class="n1" onclick="Tab('b','bx',3,1)">
+          <span class="text-dark font-weight-bold mx-5">缩略图</span>
+        </a>
+        <a href="javascript:;" id="b2" class="n2" onclick="Tab('b','bx',3,2)">
+          <span class="text-dark font-weight-bold">详情图</span>
+        </a>
+      </div>
+      <div id="bx1" class="row no-gutters pl-4">
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-1.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">新鲜芒果</div>
+              <div class="text-danger pl-3">￥：34.11</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-2.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">鲜榨芒果汁</div>
+              <div class="text-danger pl-3">￥：53.21</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-3.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">一袋坚果</div>
+              <div class="text-danger pl-3">￥：46.33</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-4.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">黑糖薯片</div>
+              <div class="text-danger pl-3">￥：59.33</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-5.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">核桃脑</div>
+              <div class="text-danger pl-3">￥：46.13</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-6.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">番茄沙示</div>
+              <div class="text-danger pl-3">￥：69.99</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-13.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">千层酥</div>
+              <div class="text-danger pl-3">￥：41.30</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-7.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">酸死人</div>
+              <div class="text-danger pl-3">￥：13.69</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-8.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">柚子和橙子</div>
+              <div class="text-danger pl-3">￥：31.65</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-9.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">腰果</div>
+              <div class="text-danger pl-3">￥：46.55</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-10.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">香甜脐橙</div>
+              <div class="text-danger pl-3">￥：45.89</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-11.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">大咪咪</div>
+              <div class="text-danger pl-3">￥：49.81</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-12.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">洋葱圈</div>
+              <div class="text-danger pl-3">￥：43.56</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-14.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">巨无霸霸</div>
+              <div class="text-danger pl-3">￥：85.53</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-15.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">百香果汁</div>
+              <div class="text-danger pl-3">￥：43.31</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mr-4">
+            <div class="border border-1 d-flex flex-column mt-5 position-relative">
+              <div class="position-absolute text-white bg-success new">新</div>
+              <a href="details.html"><img class="w-100" src="img/list/product-16.jpg" alt=""></a>
+              <div class="text-muted small pl-3 py-2">独家设计</div>
+              <div class="font-weight-bold pl-3">三文鱼</div>
+              <div class="text-danger pl-3">￥：98.35</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bx2" class="row no-gutters mx-4 my-5" style="display: none;">
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-1.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">新鲜芒果</div>
+                <div class="h6 my-2 text-danger">￥：35.25</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：3999</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-2.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">新鲜芒果汁</div>
+                <div class="h6 my-2 text-danger">￥：37.79</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：3850</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-3.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">香脆巴旦木</div>
+                <div class="h6 my-2 text-danger">￥：114.89</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：5978</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-4.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">巧克力薯片</div>
+                <div class="h6 my-2 text-danger">￥：4698</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：3458</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-5.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">核桃脑</div>
+                <div class="h6 my-2 text-danger">￥：41.89</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：1365</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-6.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">鲜榨石榴汁</div>
+                <div class="h6 my-2 text-danger">￥：45.69</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：1569</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-7.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">酸柠檬</div>
+                <div class="h6 my-2 text-danger">￥：68.36</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：1378</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-8.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">柚橙</div>
+                <div class="h6 my-2 text-danger">￥：65.22</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：580</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-9.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">现做腰果</div>
+                <div class="h6 my-2 text-danger">￥：74.95</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：4859</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-10.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">多汁脐橙</div>
+                <div class="h6 my-2 text-danger">￥：65.23</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：3194</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-11.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">虾条</div>
+                <div class="h6 my-2 text-danger">￥：49.55</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：1203</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-12.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">洋葱圈</div>
+                <div class="h6 my-2 text-danger">￥：88.36</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：7988</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-13.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">牛奶千层酥</div>
+                <div class="h6 my-2 text-danger">￥：13.99</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：289</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-14.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">三层巨无霸</div>
+                <div class="h6 my-2 text-danger">￥：12.65</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：41999</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-15.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">百香果汁</div>
+                <div class="h6 my-2 text-danger">￥：43.95</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：3130</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row no-gutters border-1 border position-relative">
+            <div class="col-4">
+              <div class="position-absolute text-white bg-success news">新</div>
+              <a href="details.html"><img class="w-75" src="img/list/product-16.jpg" alt=""></a>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column">
+                <div class="small font-weight-bold my-3">独家设计</div>
+                <div class="h5 font-weight-bold">冰鲜三文鱼</div>
+                <div class="h6 my-2 text-danger">￥：46.68</div>
+                <div class="my-3 font-weight-light">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ad pariatur unde ipsa, numquam a placeat sit doloremque veritatis fugiat molestias error, sed, aliquid consequatur dolor provident dolorem eius sunt?
+                </div>
+                <div class="h5 text-info font-weight-bold">库存量：3458</div>
+                <a href="cart.html" class="btn btn-info w-50 my-2">加入购物车</a>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <a href="javascript:;" class="left d-block border border-1 text-center text-dark font-weight-light mx-1"><</a>
+        <a href="javascript:;" class="left d-block border border-1 text-center text-dark font-weight-light mx-1">1</a>
+        <a href="javascript:;" class="left d-block border border-1 text-center text-dark font-weight-light mx-1">2</a>
+        <a href="javascript:;" class="left d-block border border-1 text-center text-dark font-weight-light mx-1">></a>
+      </div>
+      <div class="row no-gutters mt-5">
+        <div class="col-3 text-center">
+          <a href="javascript:;"><img class="w-60" src="img/list/0.png" alt=""></a>
+        </div>
+        <div class="col-6">
+          <div class="row no-gutters">
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">购物指南</a></li>
+              <li><a href="javascript:;" class="small text-muted">购物流程</a></li>
+              <li><a href="javascript:;" class="small text-muted">会员介绍</a></li>
+              <li><a href="javascript:;" class="small text-muted">常见问题</a></li>
+              <li><a href="javascript:;" class="small text-muted">联系客服</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">配送方式</a></li>
+              <li><a href="javascript:;" class="small text-muted">上门自提</a></li>
+              <li><a href="javascript:;" class="small text-muted">211限时送达</a></li>
+              <li><a href="javascript:;" class="small text-muted">配送服务查询</a></li>
+              <li><a href="javascript:;" class="small text-muted">配送费收取标准</a></li>
+              <li><a href="javascript:;" class="small text-muted">海外配送</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">支付方式</a></li>
+              <li><a href="javascript:;" class="small text-muted">货到付款</a></li>
+              <li><a href="javascript:;" class="small text-muted">在线支付</a></li>
+              <li><a href="javascript:;" class="small text-muted">分期付款</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">售后服务</a></li>
+              <li><a href="javascript:;" class="small text-muted">售后政策</a></li>
+              <li><a href="javascript:;" class="small text-muted">价格保护</a></li>
+              <li><a href="javascript:;" class="small text-muted">退款说明</a></li>
+              <li><a href="javascript:;" class="small text-muted">取消订单</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div><a href="javascript:;"><img src="img/list/app_store.png" alt=""></a></div>
+          <div><a href="javascript:;"><img src="img/list/google_play.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

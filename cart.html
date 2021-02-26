@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cart.js"></script>
+    <link rel="stylesheet" href="css/cart.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header bg-dark position-sticky">
+        <div class="row no-gutters">
+          <div class="col-3">
+            <div><a class="text-white font-weight-bold ml-4" href="index.html">欢迎来到校园交易商城</a></div>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-5 d-flex justify-content-around">
+            <div><a href="index.html" class="text-white font-weight-bold">首页</a></div>
+            <div><a href="about.html" class="text-white font-weight-bold">关于我们</a></div>
+            <div><a href="list.html" class="text-white font-weight-bold">商品列表</a></div>
+            <div><a href="javascript:;" class="text-white font-weight-bold">购物车</a></div>
+            <div><a href="log_reg.html" class="text-white font-weight-bold">登录</a></div>
+            <div><a href="log_reg.html" class="text-white font-weight-bold">注册</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative mb-5">
+        <img class="w-100" src="img/cart/sample-1.jpg" alt="">
+        <div class="h1 position-absolute main_font">
+          <div class="font-weight-bold font_move">购物车页面</div>
+        </div>
+      </div>
+      <div class="my-5 ml-4 h3 font-weight-bold"><span>您购买的东西</span></div>
+      <div class="mx-4">
+        <table id="cart" class="table table-light table-bordered table-hover text-center">
+          <tr class="bg-light">
+            <th class="py-4 small font-weight-bold">图片</th>
+            <th class="py-4 small font-weight-bold">产品名称</th>
+            <th class="py-4 small font-weight-bold">单价</th>
+            <th class="py-4 small font-weight-bold">数量</th>
+            <th class="py-4 small font-weight-bold">小计</th>
+            <th class="py-4 small font-weight-bold">操作</th>
+          </tr>
+          <tr>
+            <td><a href="details.html"><img src="img/cart/1.jpg" alt=""></a></td>
+            <td class="pt-5 font-weight-light">核桃脑</td>
+            <td class="pt-5 font-weight-light">$36.60</td>
+            <td class="pt-5 d-flex justify-content-center">
+              <button class="btn btn-sm bg-transparent border border-1">-</button>
+              <span class="pt-1 w-25 border border-1">1</span>
+              <button class="btn btn-sm bg-transparent border border-1">+</button>
+            </td>
+            <td class="pt-5 font-weight-light">￥36.60</td>
+            <td class="pt-5"><a href="javascript:;" class="font-weight-light text-dark">删除</a></td>
+          </tr>
+          <tr>
+            <td><a href="details.html"><img src="img/cart/2.jpg" alt=""></a></td>
+            <td class="pt-5 font-weight-light">坚果包</td>
+            <td class="pt-5 font-weight-light">$34.70</td>
+            <td class="pt-5 d-flex justify-content-center">
+              <button class="btn btn-sm bg-transparent border border-1">-</button>
+              <span class="pt-1 w-25 border border-1">1</span>
+              <button class="btn btn-sm bg-transparent border border-1">+</button>
+            </td>
+            <td class="pt-5 font-weight-light">￥34.70</td>
+            <td class="pt-5"><a href="javascript:;" class="font-weight-light text-dark">删除</a></td>
+          </tr>
+          <tr>
+            <td><a href="details.html"><img src="img/cart/1.jpg" alt=""></a></td>
+            <td class="pt-5 font-weight-light">核桃脑</td>
+            <td class="pt-5 font-weight-light">$36.60</td>
+            <td class="pt-5 d-flex justify-content-center">
+              <button class="btn btn-sm bg-transparent border border-1">-</button>
+              <span class="pt-1 w-25 border border-1">1</span>
+              <button class="btn btn-sm bg-transparent border border-1">+</button>
+            </td>
+            <td class="pt-5 font-weight-light">￥36.60</td>
+            <td class="pt-5"><a href="javascript:;" class="font-weight-light text-dark">删除</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="mt-4 d-flex justify-content-lg-between mx-4 an">
+        <a href="list.html" class="btn btn-lg btn-light px-5 font-weight-bold">继续购物</a>
+        <div id="price">
+          <a class="btn btn-lg btn-light px-5 font-weight-bold">结算：<span>￥107.90</span></a>
+          <a href="javascript:;" class="btn btn-lg btn-light px-5 font-weight-bold">删除购物车</a>
+        </div>
+      </div>
+      <div class="mx-4 my-5 p-3">
+        <div class="d-flex justify-content-around">
+          <img src="img/cart/4.jpg" alt="">
+          <img src="img/cart/5.jpg" alt="">
+          <img src="img/cart/6.jpg" alt="">
+          <img src="img/cart/7.jpg" alt="">
+        </div>
+      </div>
+      <div class="row no-gutters mt-5">
+        <div class="col-3 text-center">
+          <a href="javascript:;"><img class="w-60" src="img/cart/0.png" alt=""></a>
+        </div>
+        <div class="col-6">
+          <div class="row no-gutters">
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">购物指南</a></li>
+              <li><a href="javascript:;" class="small text-muted">购物流程</a></li>
+              <li><a href="javascript:;" class="small text-muted">会员介绍</a></li>
+              <li><a href="javascript:;" class="small text-muted">常见问题</a></li>
+              <li><a href="javascript:;" class="small text-muted">联系客服</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">配送方式</a></li>
+              <li><a href="javascript:;" class="small text-muted">上门自提</a></li>
+              <li><a href="javascript:;" class="small text-muted">211限时送达</a></li>
+              <li><a href="javascript:;" class="small text-muted">配送服务查询</a></li>
+              <li><a href="javascript:;" class="small text-muted">配送费收取标准</a></li>
+              <li><a href="javascript:;" class="small text-muted">海外配送</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">支付方式</a></li>
+              <li><a href="javascript:;" class="small text-muted">货到付款</a></li>
+              <li><a href="javascript:;" class="small text-muted">在线支付</a></li>
+              <li><a href="javascript:;" class="small text-muted">分期付款</a></li>
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li><a href="javascript:;" class="text-dark">售后服务</a></li>
+              <li><a href="javascript:;" class="small text-muted">售后政策</a></li>
+              <li><a href="javascript:;" class="small text-muted">价格保护</a></li>
+              <li><a href="javascript:;" class="small text-muted">退款说明</a></li>
+              <li><a href="javascript:;" class="small text-muted">取消订单</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div><a href="javascript:;"><img src="img/cart/app_store.png" alt=""></a></div>
+          <div><a href="javascript:;"><img src="img/cart/google_play.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
